@@ -1,10 +1,10 @@
 export default {
   route: {
-    dashboard: '交易大厅',
+    dashboard: 'Token Trading',
     introduction: 'Introduction',
-    documentation: '公告',
-    permission: '财务中心',
-    icons: '登录',
+    documentation: 'C2C Transaction',
+    permission: 'Margin Trading',
+    icons: 'News',
     components: 'Components',
     componentIndex: 'Introduction',
     tinymce: 'Tinymce',
@@ -37,7 +37,7 @@ export default {
     errorPages: 'Error Pages',
     page401: '401',
     page404: '404',
-    errorLog: '注册',
+    errorLog: 'Support',
     excel: 'Excel',
     exportExcel: 'Export Excel',
     selectExcel: 'Export Selected',

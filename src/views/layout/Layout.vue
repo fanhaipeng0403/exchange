@@ -1,6 +1,6 @@
 <template>
 	<div class="app-wrapper" :class="{hideSidebar:!sidebar.opened}">
-		<Header class=""></Header>
+		<Header ></Header>
 		<div class="main-container">
 			<app-main></app-main>
 		</div>
@@ -8,15 +8,15 @@
 </template>
 
 <script>
-import { Navbar, Header, AppMain, TagsView } from './components'
+
+import  Header  from './header'
+import  AppMain  from './AppMain.vue'
 
 export default {
   name: 'layout',
   components: {
-    Navbar,
     Header,
-    AppMain,
-    TagsView
+    AppMain
   },
   computed: {
     sidebar() {

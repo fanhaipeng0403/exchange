@@ -6,18 +6,31 @@ import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 import '@/styles/index.scss' // global css
+import 'swiper/dist/css/swiper.css'
+
+
+
 
 import App from './App'
 import router from './router'
 import store from './store'
 
 import i18n from './lang' // Internationalization
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import './icons' // icon
 import './errorLog'// error log
 import './permission' // permission control
 import './mock' // simulation data
 
 import * as filters from './filters' // global filters
+
+
+import socketio from 'socket.io';
+// import VueSocketIO from 'vue-socket.io';
+// export const SocketInstance = socketio('http://localhost:4113');
+//
+// Vue.use(VueSocketIO, SocketInstance)
+
 
 Vue.use(Element, {
   size: 'medium', // set element-ui default size
@@ -31,6 +44,8 @@ Object.keys(filters).forEach(key => {
 
 Vue.config.productionTip = false
 
+
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 new Vue({
   el: '#app',
   router,
