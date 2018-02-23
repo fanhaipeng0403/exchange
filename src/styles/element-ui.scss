@@ -1,12 +1,59 @@
  //覆盖一些element-ui样式
 
+ .el-menu--horizontal .el-submenu .el-menu-item {
+
+   background-color: #fff;
+   float: none;
+   height: 29px;
+   line-height: 36px;
+   padding: 0 10px;
+
+ }
+
+ .el-menu--horizontal .el-submenu > .el-menu {
+   position: absolute;
+   top: 43px;
+   left: 16px;
+   border: none;
+   padding: 5px 0;
+   background-color: #fff;
+   z-index: 100;
+   min-width: 40%;
+   -webkit-box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+   box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+   border-radius: 2px;
+
+ }
+
+
+ .el-menu-item.is-active {
+
+   color: #666;
+ }
+
  .el-tabs__item{
 
    color: #666;
    display: inline-block;
    cursor: pointer;
    font-size: 16px;
+
  }
+
+ .el-submenu__title{
+   color: #666 !important;
+   display: inline-block;
+   cursor: pointer;
+   font-size: 16px;
+
+
+ }
+
+ .el-submenu.is-active .el-submenu__title {
+   border-bottom-color: white;
+ }
+
+
 
  .el-tabs__item.is-active {
    color: #659aea;

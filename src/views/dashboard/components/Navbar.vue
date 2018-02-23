@@ -1,8 +1,8 @@
 <template>
   <div  class="max-w">
     <ul  class="home-new-market" >
-    <!--<li  class="item"  v-for="coin in socketMessage">-->
-      <li  class="item"  >
+    <li  class="item"  v-for=" coin in [1,2,3,4,5]">
+      <!--<li  class="item"  >-->
       <a  href="/exchange?coinPair=BIX_BTC" >
         <div  class="markrt-card-main">
           <ul class="market-card-data" style="list-style-type: none">
