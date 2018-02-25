@@ -1,4 +1,5 @@
 <template>
+
   <div class="kline">
     <div id="kline_container"></div>
   </div>
@@ -19,8 +20,8 @@ export default {
     mounted() {
       this.kline = new Kline({
           element: document.getElementById('kline_container'),
-          width: 1200,
-          height: 650,
+          width: 675,
+          height: 367,
           theme: 'light', // light/dark
           language: 'en-us', // zh-cn/en-us/zh-tw
           ranges: ["1w", "1d", "1h", "30m", "15m", "5m", "1m", "line"],
@@ -46,10 +47,10 @@ export default {
 
 
   .kline {
-    width: 1200px;
+    width: 675px;
     margin-left: auto;
     margin-right: auto;
-    height: 462px;
+    height: 367px;
     position: relative;
   }
 </style>

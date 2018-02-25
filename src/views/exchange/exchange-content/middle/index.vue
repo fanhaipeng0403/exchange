@@ -1,7 +1,11 @@
 <template>
+  <!--<div class="dark" style="width: 655px; height: 367px; visibility: visible;">-->
+
   <kline>
 
   </kline>
+
+    <!--</div>-->
 
 </template>
 
