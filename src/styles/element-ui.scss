@@ -9,7 +9,6 @@
    padding: 0 10px;
 
  }
-
  .el-menu--horizontal .el-submenu > .el-menu {
    position: absolute;
    top: 43px;
@@ -26,13 +25,45 @@
  }
 
 
+
+.el-table th> .cell:hover
+ {
+  color: #659cec;
+  font-weight: 900 !important;
+ }
+
+ .el-table td> .cell
+ {
+   color: black;
+ }
+ .el-tabs__header {
+   padding: 0;
+   position: relative;
+   margin: 0 0 3px;
+ }
+
+
+
+ .el-table th>.cell {
+   position: relative;
+   word-wrap: normal;
+   text-overflow: ellipsis;
+   vertical-align: middle;
+   width: 100%;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   font-size: 12px;
+   font-weight: 500 !important;
+ }
+
+
  .el-menu-item.is-active {
 
    color: #666;
  }
 
  .el-tabs__item{
-
+   padding: 0px 36px;
    color: #666;
    display: inline-block;
    cursor: pointer;
