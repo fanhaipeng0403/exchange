@@ -6,6 +6,7 @@
 
    <exchange-header></exchange-header>
   <exchange-content></exchange-content>
+      <exchange-footer></exchange-footer>
 
   </div>
     </div>
@@ -16,10 +17,11 @@
 
 import exchangeContent from './exchange-content/index.vue'
 import exchangeHeader from './exchange-header/index.vue'
+import exchangeFooter from './exchange-footer/index.vue'
 
 export default {
   name: 'exchange',
-  components: { exchangeContent, exchangeHeader }
+  components: { exchangeContent, exchangeHeader, exchangeFooter  }
 }
 
 </script>

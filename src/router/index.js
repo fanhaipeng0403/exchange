@@ -50,7 +50,7 @@ export const constantRouterMap = [
       {
       path: 'exchange',
       component: _import('exchange/index'),
-      name: 'Basic',
+        name: 'Basic',
       meta: { title: 'Basic',noCache: true }
     },
       { path: 'fullExchange',  component: _import('example/tab/index'), name: 'Full Screen', meta: { title: 'Full Screen' }}

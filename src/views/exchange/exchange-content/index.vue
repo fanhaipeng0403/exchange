@@ -1,25 +1,25 @@
 <template>
   <el-row>
     <el-col :span="6">
-      <left> </left>
+      <depth> </depth>
     </el-col>
     <el-col :span="12">
-      <middle></middle>
+      <div>2</div>
     </el-col>
     <el-col :span="6">
-        <right></right>
+      <trade-history></trade-history>
     </el-col>
   </el-row>
 </template>
 
 <script>
-import left from './left'
-import right from './right'
+import depth from './depth'
+import tradeHistory from './tradeHistory'
 import middle  from './middle/index'
 
 export default {
   name: 'exchange-content',
-  components: { left, middle, right }
+  components: { depth, middle, tradeHistory }
 }
 </script>
 

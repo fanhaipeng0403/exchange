@@ -1,9 +1,10 @@
 <template>
   <!--<div class="dark" style="width: 655px; height: 367px; visibility: visible;">-->
 
-  <kline>
-
-  </kline>
+  <trade></trade>
+  <!--<kline>-->
+<!---->
+  <!--</kline>-->
 
     <!--</div>-->
 
@@ -11,11 +12,11 @@
 
 <script>
 
-  import kline from  './kline'
+  import trade from  './trade.vue'
 
 export default {
     name : 'middle',
-  components: { kline}
+  components: {  trade}
   }
 </script>
 
