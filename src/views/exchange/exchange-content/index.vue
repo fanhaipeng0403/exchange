@@ -3,11 +3,11 @@
     <el-col :span="6">
       <depth> </depth>
     </el-col>
-    <el-col :span="12">
-      <div>2</div>
+    <el-col :span="13">
+      <middle></middle>
     </el-col>
-    <el-col :span="6">
-      <trade-history></trade-history>
+    <el-col :span="5">
+      <!--<trade-history></trade-history>-->
     </el-col>
   </el-row>
 </template>

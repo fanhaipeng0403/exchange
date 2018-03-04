@@ -34,7 +34,6 @@ export default {
           subscribePath: "/trade/kline",
           sendPath: "/trade/kline",
           debug: true,
-          showTrade: true,
           enableSockjs: true
         });
 

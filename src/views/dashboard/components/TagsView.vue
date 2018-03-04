@@ -3,8 +3,7 @@
   <div class="home-market">
 
     <div class="max-w">
-      <el-input style="width: 200px; margin-left:1000px" size="small" prefix-icon="el-icon-search"
-                v-model="filter"></el-input>
+      <el-input style="width: 200px; margin-left:1000px" size="small" prefix-icon="el-icon-search" v-model="filter"></el-input>
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <el-tab-pane label="Favourites" name="first">
           <el-table :data="getData(favouritePair)">
