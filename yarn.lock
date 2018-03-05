@@ -4033,9 +4033,9 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "http://registry.npm.taobao.org/kind-of/download/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
 
-kline@^1.1.5:
-  version "1.1.5"
-  resolved "http://registry.npm.taobao.org/kline/download/kline-1.1.5.tgz#11f516c33e2b2a53de19132f5f6ea75020a1de6d"
+kline@^1.1.6:
+  version "1.1.6"
+  resolved "http://registry.npm.taobao.org/kline/download/kline-1.1.6.tgz#fec3887485cce400b391a3782d72e8e6ee65b30c"
 
 last-call-webpack-plugin@^2.1.2:
   version "2.1.2"

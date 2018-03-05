@@ -1,6 +1,6 @@
 <template>
 
-  <div class="flex-box pd-tb16 mg-t16 exchange-content-bg exchange-shadow" paybix="true">
+  <div style="margin-right: 10px"  class="flex-box pd-tb16 mg-t16 exchange-content-bg exchange-shadow"  paybix="true">
     <div class="pd-lr16 exchange-buy_line-Light">
       <ul class="trader-box_list">
         <li class="flex-box space-between pd-b8">

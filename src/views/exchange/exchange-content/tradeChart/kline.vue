@@ -1,6 +1,6 @@
 <template>
 
-  <div class="kline">
+  <div class="kline" style="padding-bottom: 20px">
     <div id="kline_container"></div>
   </div>
 </template>
@@ -20,19 +20,20 @@ export default {
     mounted() {
       this.kline = new Kline({
           element: document.getElementById('kline_container'),
-          width: 675,
-          height: 367,
-          theme: 'light', // light/dark
-          language: 'en-us', // zh-cn/en-us/zh-tw
+          width: 1200,
+          height: 390,
+          theme: 'light',
+          language: 'en-us',
           ranges: ["1w", "1d", "1h", "30m", "15m", "5m", "1m", "line"],
           symbol: "BTC",
           symbolName: "BTC/USD",
-          type: "stomp", // poll/stomp
+          type: "stomp",
           url: 'https://127.0.0.1/v1/socket',
           limit: 1000,
           intervalTime: 5000,
           subscribePath: "/trade/kline",
           sendPath: "/trade/kline",
+          showTrade: false,
           debug: true,
           enableSockjs: true
         });
@@ -46,11 +47,17 @@ export default {
 
 
   .kline {
-    width: 675px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    height: 367px;
+    height: 390px;
     position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .04), 0 5px 10px 0 rgba(54, 54, 77, .1);
+
   }
+
+
+
 </style>
 

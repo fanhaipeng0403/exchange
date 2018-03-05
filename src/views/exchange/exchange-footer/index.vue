@@ -144,9 +144,6 @@
     color: #659aea
   }
 
-  .exchange-title-bg {
-    background-color: #1d2129
-  }
 
   .exchange-content-bg {
     background-color: #242933
