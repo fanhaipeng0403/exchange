@@ -1,24 +1,21 @@
 <template>
-  <div>
-    <el-row>
-      <el-col :span="12">
-        <trade-chart></trade-chart>
-      </el-col>
-    </el-row>
-    <el-row style="padding-top: 24px;">
-      <el-col :span="6">
-        <depth></depth>
-      </el-col>
-      <el-col :span="13">
-        <div style="height: 370px; text-align: center">深度图</div>
+  <div style="display: flex;justify-content: space-between">
+   <div>
+
+     <depth></depth>
+   </div>
+    <div>
+         <trade-chart></trade-chart>
         <trade></trade>
 
-      </el-col>
-      <el-col :span="5" >
-        <trade-history ></trade-history>
-      </el-col>
+    </div>
 
-    </el-row>
+    <div>
+
+       <trade-history ></trade-history>
+
+    </div>
+
 
   </div>
 </template>

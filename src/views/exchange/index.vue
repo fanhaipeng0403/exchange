@@ -29,7 +29,7 @@ export default {
 <style scoped>
 
 .max-w {
-width: 1200px;
+width: 1300px;
 padding: 0 50px;
 margin: 0 auto;
 }
