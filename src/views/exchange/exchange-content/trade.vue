@@ -58,7 +58,7 @@
           <div class="color-grey ts-12">EOS Available:0.0000</div>
         </li>
         <li class="color-grey ts-14">
-          <div style="width: 295px;">
+          <div >
             <div class="box-input-box">
               <span class="box-input_prefix pd-l8"><div
               class="color-555" style="width: 72px;">Price</div></span> <span
