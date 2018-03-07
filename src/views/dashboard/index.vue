@@ -1,33 +1,28 @@
 <template>
     <div>
-    <home-banner></home-banner>
-    <Navbar></Navbar>
-    <TagsView></TagsView>
+      <billBoards></billBoards>
+      <leaderBoards></leaderBoards>
+      <tradeHome></tradeHome>
     </div>
-
 </template>
 
 <script>
 
-  import { Navbar, HomeBanner ,AppMain, TagsView } from './components'
+  import  leaderBoards from './components/leaderBoards.vue'
+  import  billBoards from './components/billBoards.vue'
+  import  tradeHome from './components/tradeHome.vue'
 
   export default {
     name: 'Dashboard',
     components: {
-      HomeBanner,
-      Navbar,
-      TagsView
+      leaderBoards,
+      billBoards,
+      tradeHome
+
     }
 
   }
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-  @import "src/styles/mixin.scss";
-  .app-wrapper {
-    @include clearfix;
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
 </style>
