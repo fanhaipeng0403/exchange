@@ -135,8 +135,15 @@
         // }
       }
     },
+
     created() {
-      // window.addEventListener('hashchange', this.afterQRScan)
+
+        if (!this.getSocket)
+          if (process.env.NODE_ENV === 'production') {
+            this.$store.commit('setGetSocket', io.connect('localhost:9090/'))
+          } else {
+            this.$store.commit('setGetSocket', io.connect('http://www.qiufengh.com:9090/'))
+          }
     },
     destroyed() {
       // window.removeEventListener('hashchange', this.afterQRScan)

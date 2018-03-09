@@ -56,6 +56,7 @@
   //  }
   import {mapGetters} from 'vuex'
 
+  import io from 'socket.io-client'
 
   export default {
     data() {
@@ -113,9 +114,6 @@
 
       }
     },
-
-
-
     created() {
       if (!this.getSocket)
         if (process.env.NODE_ENV === 'production') {
@@ -125,21 +123,28 @@
         }
     },
 
+
+
     computed: {
-      ...mapGetters(['getSocket'])
-
+      ...mapGetters([
+        'getSocket',
+        'getInfos',
+        'getUsers',
+        'getMessHistoryInfos'
+      ]),
+      ...mapState([
+        'isbind'
+      ])
     },
-
-
-
 
     methods: {
       move: function (symbol) {
         this.$router.push({path: 'exchange', query: {symbol: symbol}});
-
       }
 
-    }
+    },
+
+
   }
 
 
