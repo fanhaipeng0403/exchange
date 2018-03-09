@@ -54,6 +54,7 @@
   //      volume: 30000,
   //    }]
   //  }
+  import {mapGetters} from 'vuex'
 
 
   export default {
@@ -112,6 +113,26 @@
 
       }
     },
+
+
+
+    created() {
+      if (!this.getSocket)
+        if (process.env.NODE_ENV === 'production') {
+          this.$store.commit('setGetSocket', io.connect('localhost:9090/'))
+        } else {
+          this.$store.commit('setGetSocket', io.connect('http://www.qiufengh.com:9090/'))
+        }
+    },
+
+    computed: {
+      ...mapGetters(['getSocket'])
+
+    },
+
+
+
+
     methods: {
       move: function (symbol) {
         this.$router.push({path: 'exchange', query: {symbol: symbol}});

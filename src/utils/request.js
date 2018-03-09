@@ -3,6 +3,25 @@ import { Message } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
 
+//vue  请求数据
+// 使用axios
+// https://github.com/hua1995116/webchat/blob/master/src/api/server.js  推荐这个和本项目的
+// https://github.com/Exrick/xmall-front/blob/master/src/api/public.js
+// https://github.com/hua1995116/musiccloudWebapp/blob/cd16ad0510a98caa8d83bd7fa924332d15f5b14c/src/utils/axios.js
+// https://github.com/hua1995116/webchat/blob/master/src/api/axios.js
+
+//自己用fetch写的
+// https://github.com/bailicangdu/vue2-elm/blob/master/src/config/fetch.js
+// http://www.webhek.com/post/javascript-fetch-api.html
+// https://segmentfault.com/a/1190000003810652
+// 这个新fetch API相比起XMLHttpRequest更简单，更易读，是很好的Ajax替代方法；fetch有很明显的优势，相信很快会流行起来
+
+
+// 对比分析
+// https://segmentfault.com/a/1190000012836882
+
+
+
 // create an axios instance
 const service = axios.create({
   baseURL: process.env.BASE_API, // api的base_url

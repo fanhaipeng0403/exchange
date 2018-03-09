@@ -1,10 +1,96 @@
+
+
+
+// 导入
+
+
+
+//发现不同项目采用的导入方式不同, 这里对比了下require和import ,
+// 好文 http://imweb.io/topic/582293894067ce9726778be9
+// http://www.ruanyifeng.com/blog/2015/05/require.html
+// http://www.ruanyifeng.com/blog/2015/05/require.html
+
+
+
+// ES6
+
+// 直接加载
+// import Register from '../view/Register'
+
+
+// 懒加载
+// const Index = () => import('/page/index.vue')
+
+
+//require
+
+
+// resolve => require(['../components/Home.vue'],resolve)
+// r => require.ensure([], () => r(require('../page/home')), 'home')
+
+
+// const _import = require('./_import_' + process.env.NODE_ENV)
+// _import('errorPage/404')
+
+
+
+// v-router
+
+// 路由参数匹配(注意复用不更新的问题)
+// template: <div>User {{ $route.params.id }}</div>(内容显示url的部分)
+// https://jsfiddle.net/yyx990803/4xfa2f19/
+
+
+// 嵌套路由,子路由, 根据url匹配,从组件集合里(即子组件)取一个,  只显示一个视图 (1对1个组合里的一个)
+// https://jsfiddle.net/yyx990803/L7hscd8h/
+
+
+// 命名路由
+//<router-link :to="{ name: 'user', params: { userId: 123 }}">User</router-link>
+//<router-link to="/user/foo">/user/foo</router-link>
+
+// 命名视图
+// 有时候想同时（同级）展示多个视图，而不是嵌套展示,显示多个视图(一对多)
+
+
+
+// 重定向与别名的区别:
+// 是否更改url
+
+
+//钩子
+
+// http://blog.csdn.net/wang1006008051/article/details/77962942
+
+// 进入
+// 进出
+// 跳转
+// 权限之类的
+
+//
+
+
+
+
+
+
+
+// https://github.com/fanhaipeng0403/webchat/blob/master/src/router/index.js
+// https://github.com/bailicangdu/vue2-elm/blob/master/src/router/router.js
+// https://github.com/bailicangdu/vue2-happyfri/blob/master/src/router/router.js
+// https://github.com/tgxhx/vue-reader/blob/master/src/router/index.js
+// https://github.com/Exrick/xmall-front/blob/master/src/router/index.js
+//
+
 import Vue from 'vue'
 import Router from 'vue-router'
+Vue.use(Router)
+
+
 const _import = require('./_import_' + process.env.NODE_ENV)
 // in development-env not use lazy-loading, because lazy-loading too many pages will cause webpack hot update too slow. so only in production use lazy-loading;
 // detail: https://panjiachen.github.io/vue-element-admin-site/#/lazy-loading
 
-Vue.use(Router)
 
 /* Layout */
 import Layout from '../views/layout/Layout'
